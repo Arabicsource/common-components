@@ -22,6 +22,7 @@ jobs:
     - run:
         name: login to npm
         command: echo "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL"
+    - run:
         name: setup git globals
         command: |
             git config --global push.default matching
