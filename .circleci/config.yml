@@ -31,6 +31,7 @@ jobs:
         name: patch update and commit package.json
         command: |
             echo "doing a patch update!"
+            git clean -d -x -f
             npm version patch
             git commit -a --amend -m 'automated patching [ci skip]'
             git push
