@@ -21,7 +21,7 @@ jobs:
         command: npm install --no-package-lock
     - run:
         name: login to npm
-        command: echo "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL"
+        command: sh login.sh
     - run:
         name: setup git globals
         command: |
